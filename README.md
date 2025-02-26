@@ -2,10 +2,10 @@
 
 #### Сборка Docker-Образа
 
-`DOCKER_BUILDKIT=1 docker build -t cr.yandex/<id реестра>/ntlg-app:v1.0.0 .`
+`DOCKER_BUILDKIT=1 docker build -t <id реестра>/ntlg-app:<версия> .`
 
 Проверка работы сервиса:
 
-`docker run -d --name app --rm -p 8080:80 cr.yandex/<id реестра>/ntlg-app:v1.0.0`
+`docker run -d --name app --rm -p 8080:80 <id реестра>/ntlg-app:<версия>`
 
 `curl localhost:8080`
